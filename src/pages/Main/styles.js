@@ -44,9 +44,10 @@ export const AlertBox = styled.View`
 
 export const AlertTitle = styled.Text`
   color: #fc5a74;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
   margin-bottom: 20px;
+  font-family: pixel;
 `;
 
 export const Title = styled.Text`
@@ -54,13 +55,14 @@ export const Title = styled.Text`
   color: #00b300;
 
   margin-bottom: 40px;
+  font-family: pixel;
 `;
 
 export const ConverterBox = styled.View`
   max-width: 400px;
   max-height: 300px;
 
-  padding: 16px;
+  padding: 8px;
 
   width: 100%;
   height: 100%;
@@ -80,12 +82,14 @@ export const InputBox = styled.View`
 `;
 
 export const Label = styled.Text`
-  font-size: 24px;
+  font-size: 20px;
   border: 2px solid ${(props) => props.labelColor};
   background-color: black;
   color: ${(props) => props.labelColor};
   border-radius: 10px;
-  padding: 8px;
+  padding: 18px 8px;
+  font-family: pixel;
+  text-align: center;
 `;
 
 export const Input = styled.TextInput`
@@ -104,17 +108,20 @@ export const ResponseBox = styled.View`
 `;
 
 export const LabelR = styled.Text`
-  font-size: 24px;
+  font-size: 20px;
   color: #008000;
   padding: 8px;
+  font-family: pixel;
 `;
 
 export const Output = styled.Text`
   background-color: #efefef;
-  color: #0c7b49;
+  color: #008000;
   width: 170px;
   height: 45px;
   padding: 10px;
+
+  font-family: pixel;
 
   border-radius: 10px;
 
@@ -138,9 +145,10 @@ export const Button = styled.TouchableHighlight`
 `;
 
 export const ButtonText = styled.Text`
-  font-size: 20px;
+  font-size: 16px;
   color: ${(props) => props.buttonTextColor};
   text-align: center;
+  font-family: pixel;
   letter-spacing: 1px;
 `;
 
@@ -153,4 +161,5 @@ export const CopyrightLink = styled.Text`
   font-size: 20px;
   color: white;
   text-decoration: underline;
+  font-family: serif;
 `;

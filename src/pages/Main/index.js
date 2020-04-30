@@ -23,6 +23,7 @@ import {
 } from './styles';
 
 const Main = () => {
+  // Here we are add the gif and state of our modal
   const errorGif = require('../../assets/images/error.gif');
   const [modalON, setModalON] = useState(false);
 
@@ -32,7 +33,7 @@ const Main = () => {
   const [label, setLabel] = useState('Binary');
   const [labelColor, setLabelColor] = useState('#008000');
 
-  // Here we are seting the new Binary number onChange and checking if it is a binary number
+  // Here we are checking if the input field has a binary number
   function checkField(event) {
     const binaryCheck = event;
     let x;
@@ -52,10 +53,12 @@ const Main = () => {
     setLabelColor('#008000');
   }
 
+  // Here we are converting the binary number into a decimal and checking if the input has in fact a binary number
   function convert() {
     let conversion;
 
     if (label === 'Error!') {
+      setDecimal('');
       return setModalON(!modalON);
     }
 
@@ -67,6 +70,7 @@ const Main = () => {
     setDecimal(conversion);
   }
 
+  // Here is the URL of our copyright
   function goToCopyright() {
     Linking.openURL('https://www.instagram.com/espelhoinvertido');
   }
@@ -75,6 +79,7 @@ const Main = () => {
     checkField(binary);
   }, [binary]);
 
+  // THE RETURN CALL
   return (
     <Container backgroundColor="black" padding={24}>
       <StatusBar barStyle="dark-content" backgroundColor="#00b300" />
@@ -112,7 +117,7 @@ const Main = () => {
 
           <Gif source={errorGif}>
             <AlertBox>
-              <AlertTitle>Please, enter a binary number!</AlertTitle>
+              <AlertTitle>Enter a binary number!</AlertTitle>
 
               <Button
                 onPress={() => setModalON(!modalON)}
