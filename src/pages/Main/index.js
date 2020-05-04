@@ -30,6 +30,7 @@ const Main = () => {
   // Here we have the variables to our binary and decimal numbers, also the label and its color
   const [binary, setBinary] = useState('0');
   const [decimal, setDecimal] = useState('');
+  const [bindec, setBindec] = useState('Bin2Dec');
   const [label, setLabel] = useState('Binary');
   const [labelColor, setLabelColor] = useState('#008000');
 
@@ -63,10 +64,12 @@ const Main = () => {
     }
 
     if (!binary) {
+      setBindec('Input empty!');
       return setDecimal('');
     }
 
     conversion = parseInt(binary, 2);
+    setBindec('Bin2Dec');
     setDecimal(conversion);
   }
 
@@ -84,7 +87,7 @@ const Main = () => {
     <Container backgroundColor="black" padding={24}>
       <StatusBar barStyle="dark-content" backgroundColor="#00b300" />
 
-      <Title>Bin2Dec</Title>
+      <Title>{bindec}</Title>
       <ConverterBox>
         <InputBox>
           <Label labelColor={labelColor}>{label}</Label>
