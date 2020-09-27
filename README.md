@@ -19,7 +19,7 @@
 <hr />
 
 <h4 align="center"> 
-	Not continued ...  🚧
+	Stand by ...  🚧
 </h4> 
 
 **Source:** https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Bin2Dec-App.md
