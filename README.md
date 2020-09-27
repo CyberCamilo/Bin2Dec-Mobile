@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/bin2de-mobile.gif"/>
+  <img src="src/assets/readme/bin2de-mobile.gif"/>
 </p>
 
 <hr />
