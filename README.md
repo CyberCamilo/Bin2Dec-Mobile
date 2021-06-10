@@ -1,5 +1,5 @@
 
-# Bin2Dec - Desktop
+# Bin2Dec - Mobile
 
 Mobile application to convert binary number to decimal number.
 
