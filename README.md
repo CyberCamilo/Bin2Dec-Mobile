@@ -16,9 +16,9 @@ Mobile application to convert binary number to decimal number.
 
   
 ## Demo
-
-<img src="src/assets/readme/bin2de-mobile.gif"/>
-
+<p align="center"> 
+  <img src="src/assets/readme/bin2de-mobile.gif"/>
+</p>
 
 ## Run Locally
 
